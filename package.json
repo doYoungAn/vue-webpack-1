@@ -1,0 +1,19 @@
+{
+  "name": "vue-webpack-1",
+  "version": "1.0.0",
+  "description": "뷰 프로젝트 보일러플레이트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doYoungAn/vue-webpack-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doYoungAn/vue-webpack-1/issues"
+  },
+  "homepage": "https://github.com/doYoungAn/vue-webpack-1#readme"
+}
