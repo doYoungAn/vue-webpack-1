@@ -1,5 +1,6 @@
 const { VueLoaderPlugin } = require('vue-loader');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -32,6 +33,13 @@ module.exports = {
             root: process.cwd(),
             dry: false,
             verbose: true
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: 'src/assets',
+                to: 'assets',
+                toType: 'dir'
+            }
+        ])
     ]
 }
