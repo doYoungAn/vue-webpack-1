@@ -1,4 +1,4 @@
-const { VueLoaderPlugin } = require('vue-router')
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
     entry: {
