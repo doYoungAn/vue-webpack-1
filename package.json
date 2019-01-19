@@ -4,7 +4,7 @@
   "description": "뷰 프로젝트 보일러플레이트",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --config ./webpack.config.dev.js"
   },
   "repository": {
     "type": "git",
