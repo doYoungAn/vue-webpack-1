@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const merge = require('webpack-merge');
 const baseConfig = require('./webpack.config.base');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -5,13 +6,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(baseConfig, {
     mode: 'development',
     devServer: {
-        port: 8080,
+        hot: true,
         host: '0.0.0.0',
         port: 8080,
-        historyApiFallBack: true,
-        publicPath: '/'
+        historyApiFallback: true,
+        publicPath: '/',
     },
     plugins: [
+        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html'
         })
