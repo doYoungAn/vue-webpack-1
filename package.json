@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/doYoungAn/vue-webpack-1/issues"
   },
-  "homepage": "https://github.com/doYoungAn/vue-webpack-1#readme"
+  "homepage": "https://github.com/doYoungAn/vue-webpack-1#readme",
+  "dependencies": {
+    "vue": "^2.5.22",
+    "vue-router": "^3.0.2"
+  }
 }
