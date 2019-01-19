@@ -1,4 +1,5 @@
 const { VueLoaderPlugin } = require('vue-loader');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -26,6 +27,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new CleanWebpackPlugin(['dist'], {
+            root: process.cwd(),
+            dry: false,
+            verbose: true
+        })
     ]
 }
