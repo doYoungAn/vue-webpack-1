@@ -3,6 +3,7 @@ const baseConfig = require('./webpack.config.base');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(baseConfig, {
+    mode: 'production',
     output: {
         filename: '[name].[hash].js',
         chunkFilename: '[name].[hash].js'
