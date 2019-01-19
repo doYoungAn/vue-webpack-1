@@ -4,7 +4,8 @@
   "description": "뷰 프로젝트 보일러플레이트",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./webpack.config.dev.js"
+    "dev": "webpack-dev-server --config ./webpack.config.dev.js",
+    "build": "webpack --config ./webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
